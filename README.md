@@ -3,9 +3,10 @@
 ---
 Как запустить
 
-git clone https://github.com/твой-юзернейм/твой-проект.git
-cd твой-проект
+git clone https://github.com/Zhangyrkhan/demo.git
+cd demo
 mvn spring-boot:run
+И можете тестировать через postman
 Приложение будет доступно на http://localhost:8080
 
 Примеры запросов
@@ -38,6 +39,12 @@ POST /api/auth/login — вход (возвращает токен)
     "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ4Nzg0MTg3LCJleHAiOjE3NDg3ODQ3ODd9.BHC50XltbWvDfmKHRicfMfccCrVjxTSM7vjUeTqjTv0",
     "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ4Nzg0MTg3LCJleHAiOjE3NDg4NzA1ODd9.YzWxG9IqUC-iT3z850Vke9a8KwUg3-pQeWNk84B_tMQ"
 }
+
+POST /api/auth/refresh обновление токена 
+![image](https://github.com/user-attachments/assets/a8571bd7-16f6-4a1f-9592-dd5210e07a37)
+
+Нужно вставить refresh token и он обновит токены
+
 
 GET /api/admin/users - получить всех зарегистрированных юзеров (доступно только для роли ADMIN)
 JWT-токен передаётся в заголовке:
