@@ -114,41 +114,6 @@ Authorization: Bearer <токен>
 
 - ---
 
-Структура проекта
-
-com.example.demo
-├── controller
-│ ├── AdminController 
-│ ├── AuthController 
-│ └── TaskController 
-│
-├── dto
-│ ├── AuthRequest
-│ └── AuthResponse 
-│
-├── entity
-│ ├── Task 
-│ └── User 
-│
-├── model
-│ ├── Role 
-│ └── TaskStatus 
-│
-├── repository
-│ ├── TaskRepository 
-│ └── UserRepository 
-│
-├── security
-│ ├── JwtAuthFilter 
-│ └── SecurityConfig 
-│
-├── service
-│ ├── AuthService 
-│ ├── JwtService 
-│ ├── TaskService 
-│ └── UserDetailsServiceImpl
-│
-└── DemoApplication.java 
 Защита и доступ
 
 - /api/auth/** — открытые маршруты (регистрация, вход)
