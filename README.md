@@ -30,20 +30,25 @@ POST /api/auth/register — регистрация
 
 
 POST /api/auth/login — вход (возвращает токен)
+
 {
   "username": "user",
   "password": "user"
 }
+
 {
   "username": "admin",
   "password": "admin"
 }
 
+
 Пример вывода 
+
 {
     "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ4Nzg0MTg3LCJleHAiOjE3NDg3ODQ3ODd9.BHC50XltbWvDfmKHRicfMfccCrVjxTSM7vjUeTqjTv0",
     "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ4Nzg0MTg3LCJleHAiOjE3NDg4NzA1ODd9.YzWxG9IqUC-iT3z850Vke9a8KwUg3-pQeWNk84B_tMQ"
 }
+
 ![image](https://github.com/user-attachments/assets/8dfdefba-a15a-4ebc-8608-1227131cd48f)
 
 
